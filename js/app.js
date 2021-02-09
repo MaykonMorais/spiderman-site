@@ -130,5 +130,11 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     '-=0.5'
    )
-
 })
+
+$(document).ready(function() {
+  $('#bx').click(function() {
+    $(this).toggleClass('active')
+    $('.nav-content').toggleClass('active')
+  })
+});

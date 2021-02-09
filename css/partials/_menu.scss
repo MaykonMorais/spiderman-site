@@ -19,30 +19,59 @@ header {
   justify-content: flex-start;
   align-items: center;
 
+  width: 100vw;
+
+  @include responsive() {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 
 .logo {
   max-width: 88px;
 }
 
+.nav-content { 
+
+  @include responsive() {
+    padding: $gap-5 $gap-3;
+
+    position: fixed;
+    background: $blue-light;;
+
+    top: 0px;
+    height: 100vh;
+    right: 0;
+
+    z-index: 1;
+
+    transition: .7s ease;
+  }
+  
+}
+
+.nav-content.active {
+  right: -100%;
+}
+
 .nav-list {
   list-style-type: none;
   display: flex;
-
 
   li {
     margin-left: 24px;
   }
 
-
   @include responsive() {
-    display: none;
+    margin-top: $gap-4;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .nav-link {
   display: inline-block;
-
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -59,21 +88,36 @@ header {
     display: block; 
     position: absolute;
 
-    top: -40px;
-    left: 50%;
+    @include responsive() {
+      left: -40px;
+      top: 50%;
+      transform: rotate(-180deg);
+
+      width: 0px;
+      height: 2px;
+    }
 
     transition: .7s ease;
-
+      
+    top: -40px;
+    left: 50%;
     width: 2px;
     height: 0px;
+    
     background: linear-gradient(360deg, #EA1D22 0%, rgba(231, 29, 34, 0) 97.46%);
-  }
-
+  }  
+  
   &:hover {
     color: $white-light;
 
     &::after {
       height: 40px;
+      
+      @include responsive() {
+        width: 40px;
+        height: 2px;
+
+      }
     }
   }
 }
@@ -86,11 +130,10 @@ header {
   display: flex;
   align-items: center;
 
-
   @include responsive() {
     display: none;
+    
   }
-
 
   svg {
     cursor: pointer;
@@ -158,8 +201,11 @@ header {
 
   @include responsive() {
     display: block;
+    z-index: 999;
+
   }
 }
+
 
 #bx:checked ~ label .bx::after {
   transform: rotate(225deg);

@@ -11,6 +11,12 @@
   }
 }
 
+@mixin fullscreen {
+  @media screen and (min-width: 960){
+    @content;
+  }
+}
+
 @import 'partials/colors';
 
 
@@ -42,7 +48,7 @@ p {
   line-height: 140%;
 }
 
+@import 'partials/spacing';
 @import  'partials/layout';
 @import 'partials/menu';
 @import 'partials/animations';
-@import 'partials/spacing';
