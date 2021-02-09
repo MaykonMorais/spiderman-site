@@ -118,11 +118,73 @@ header {
   width: 48px;
   height: 48px;
 
-  background-color: $white;
   border-radius: 8px;
 
+  position: relative;
+
+  &::after {
+    content: '';
+
+    width: 70%;
+    height: 10%;
+
+    top: 30%;
+    left: 15%;
+
+    border-radius: 20px;
+    background-color: $white;
+
+    position: absolute;
+
+    transition: .7s ease;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+
+    top: 50%;
+    left: 45%;
+
+    background-color: $white;
+
+    transition: .7s ease;
+  }
 
   @include responsive() {
     display: block;
   }
+}
+
+#bx:checked ~ label .bx::after {
+  transform: rotate(225deg);
+
+  width: 70%;
+  height: 10%;
+
+  top: 45%;
+  left: 15%;
+}
+
+.display-none {
+  display: none;
+}
+
+#bx:checked ~ label .bx::before {
+  transform: rotate(-405deg);
+
+  width: 70%;
+  height: 10%;
+
+  top: 45%;
+  left: 15%;
+}
+
+.display-none {
+  display: none;
 }
