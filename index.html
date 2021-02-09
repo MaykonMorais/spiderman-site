@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spider-man : Miles Morales | PS5 </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+  <script src="js/svg-inject.min.js"></script>
+  
+</head>
+<body>
+  <!-- HEADER -->
+  
+  <header>
+    <nav class="navbar">
+      <div class="nav-menu">
+        <div class="logo">
+          <img src="/assets/svg/spider-logo.svg" alt="Logo" onload="SVGInject(this)">
+        </div>
+          
+          <ul class="nav-list">
+            <li>
+              <a href="" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">Story</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">Wallpaper</a>
+            </li>
+            <li>
+              <a href="" class="nav-link red">#BeYourself</a>
+            </li>
+         </ul>
+      </div>
+      
+      <div class="nav-social">
+        <img src="/assets/svg/facebook-logo.svg" alt="Facebook" onload="SVGInject(this)">
+        <img src="/assets/svg/instagram-logo.svg" alt="Instagram" onload="SVGInject(this)">
+        <img src="/assets/svg/youtube-logo.svg" alt="Youtube" onload="SVGInject(this)">
+        <img src="/assets/svg/twitter-logo.svg" alt="Twitter" onload="SVGInject(this)">  
+      </div>
+
+      <div class="bx mr-2">
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Background Video -->
+
+  <section class="bg-video">
+    <video class="video" autoplay muted loop>
+      <source src="/video/background-video.mp4"> 
+    </video>
+  </section>
+
+
+  <!-- Background Loading -->
+  <section class="bg-loader">
+    <img src="/assets/svg/spider-logo.svg " alt="Logo" onload="SVGInject(this)" />
+  </section>
+
+  <!-- Container -->
+
+  <section class="container">
+    
+    <div class="container-item-1 item-1">
+      <div class="px-1">
+        <img src="/assets/img/spiderman-text.png" />
+      </div>
+
+      <p class="my-2 item-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Urna orci orci tempus odio integer feugiat in. 
+        Tortor nibh ipsum sed sagittis, lorem diam arcu. 
+        Eget pellentesque amet mi ultricies. 
+        Et, maecenas ornare vitae elit enim sed at posuere.
+      </p>
+
+
+      <div class="item-3">
+        <a href="" class="btn">Pre-order now</a>
+        <a href="" class="btn-secondary ml-2">Watch the teaser</a>
+      </div>
+
+      <div class="flex align-items-center mt-2 item-4">
+        <img class="w-auto  " src="/assets/svg/playstation-logo.svg" onload="SVGInject(this)" />
+        <img class="w-auto ml-2" src="/assets/svg/marvel-logo.svg" onload="SVGInject(this)" />
+      </div>
+    </div>
+
+    <div class="container-item-2 item-5">
+      <div class="js-tilt">
+        <img src="/assets/img/spiderman.png" class="spiderman" alt="Spiderman" />
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Scripts -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+  
+  <script src="js/app.js"></script>
+
+  <script>
+    $('.js-tilt').tilt({
+      perspective: 900,
+      scale: 1.02
+    });
+  </script>
+</body>
+</html>
