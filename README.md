@@ -1,5 +1,5 @@
 # spiderman-site :spider: 
-A [page to Spiderman: Miles Morales PS5](https://spiderman-site.netlify.app/) based on UI Concepts. This project was designed in Figma, click here to access [figma project](https://www.figma.com/file/h3aFZMLkH1txSCJ4tlOPwp/Spiderman-Project?node-id=0%3A1).
+A [page to Spiderman: Miles Morales PS5](https://spiderman-site.netlify.app/) based on UI Concepts. This project was designed in Figma, click to see [figma project](https://www.figma.com/file/h3aFZMLkH1txSCJ4tlOPwp/Spiderman-Project?node-id=0%3A1).
 
 <br>
 <div align="center">
